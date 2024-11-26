@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada</title>
+    
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            margin-top: 20px    ;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0.5rem;
+        }
+
+        img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin: 0.5rem;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            margin: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        #profesional{
+
+            background-color: #ff0000;
+        }
+        #profesional:hover{
+            background-color: #890303;
+        }
+      
+        @media (min-width: 576px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+
+            button {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-size: 1.5rem;
+                padding: 0.75rem 1.5rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.75rem;
+            }
+
+            button {
+                font-size: 1.75rem;
+                padding: 1rem 2rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            button {
+                font-size: 2rem;
+                padding: 1.25rem 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #890303;">ERROR</h1>
+    <p>Hubo un error en tu busqueda. Es posible que se haya movido, editado o borrado.</p>
+    <img src="./file/img/steve.png" alt="Steve chiquito, creditos a quien corresponda.">
+    <button onclick="window.location.href='inicio.html'">Inicio.</button>
+    
+    <button id="profesional" window.location.href='inicio.html'">Portafolio.</button>
+</body>
+</html>

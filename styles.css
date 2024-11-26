@@ -1,0 +1,294 @@
+*{
+
+    font-family: Courier;
+}
+body{
+    background-color: darkblue;
+  background-attachment: fixed;
+}
+.shake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+h1{
+font-size: 20px;
+
+
+}
+h2{
+    font-size: 18px;
+}
+
+h3{
+font-size: 16px;
+color: #ddd205;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h4{
+    font-size: 14px;
+    color: #038f01;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+p{
+    font-size: 12px;
+    color: #22223c;
+}
+.header {
+    background-image: url(./file/bg/bichtexture.png);
+    background-attachment: fixed;
+    background-color: #403f3f;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: #038f01;
+    gap: 10px;
+    border-style: dashed;
+    border-spacing: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#piclog {
+    text-align: center;
+    grid-area: pic;
+    width: 70%;
+    margin-left: 100px;
+}
+
+.box {
+    background-color: #1d1964;
+    border: 2px dashed #056204;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 500px;
+    overflow: auto;
+}
+body {
+    background-image:  url('./file/bg/cb2.png'), url('./file/bg/cb3.png'), url('./file/bg/cb4.png'), url('./file/bg/cb5.png'), url('./file/bg/cb6.png'), url('./file/bg/cb7.png'), url('./file/bg/cb8.png'), url('./file/bg/cb9.png');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 60px; /* Ajusta el tamaño para mosaicos */
+    animation: moveBackground 180s linear infinite;
+}
+#musicplayer {
+	background: rgb(1, 184, 32);
+	border: 2px solid pink;
+	color: rgb(249, 1, 1);
+    
+}
+:root {
+	--blue: hsla(212, 31%, 56%, 0.9);
+	--purple: hsla(245, 28%, 45%, 0.9);
+	--white: hsla(60, 100%, 100%, 0.9);
+	--yellow: #fff9ce;
+	--peach: hsla(27, 100%, 85%, 0.9);
+	--pink: hsla(352, 34%, 65%, 0.9);
+	--blue2: rgb(83, 98, 141, 0.9);
+	--pink2: hsla(328, 20%, 56%, 0.9);
+}
+.songtitle {
+	border-bottom: 2px solid var(--pink2);
+}
+
+i.fas.fa-pause,
+i.fas.fa-play,
+i.fas.fa-forward,
+i.fas.fa-backward {
+	color: var(--purple);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	background: var(--purple);
+}
+
+input[type=range]::-webkit-slider-thumb {
+	background: var(--purple);
+}
+
+input[type=range]::-moz-range-track {
+	background: var(--purple);
+}
+
+input[type=range]::-moz-range-thumb {
+	background: var(--pink2);
+}
+
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+nav{
+    
+        background-image:   url('./file/bg/yellowlana.png');
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: 60px; /* Ajusta el tamaño para mosaicos */
+        animation: moveBackground 180s linear infinite;
+}
+#black{
+    color:black;
+}
+
+.clm {
+    display: flex;
+    flex-direction: row; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espacio entre los elementos (ajusta según tus necesidades) */
+    text-align: center; /* Alinea el texto al centro dentro de los elementos */
+}
+
+/* Asegúrate de que el contenedor de los botones esté usando Flexbox */
+nav {
+    display: flex; /* Usa Flexbox para alinear los botones */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan si no hay suficiente espacio */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+/* Estilo de los botones */
+.btn {
+    background-color: #fbfbfb;
+    border: none;
+    color: #056204;
+    padding: 10px 20px; /* Ajusta el padding para mejor apariencia */
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Añade bordes redondeados para un mejor aspecto */
+}
+
+/* Estilo para el estado hover del botón */
+.btn:hover {
+    background-color: #e0e0e0; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+
+section{
+    background-image: url(./file/bg/SB132.JPG);
+    background-size: 400px;
+    
+}
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+.imagenpicture{
+
+    height: 40dvh;
+  }
+
+  #s1{   background-image: url(./file/bg/SB133.JPG);
+    background-size: 400px;
+    }
+  /* Mobile-first: El diseño es de una sola columna en dispositivos pequeños */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+   
+
+}
+
+.column {
+    width: 100%;
+    margin: 5px;
+}
+
+/* Estilo para la imagen dentro de la columna */
+.imagenpicture {
+    width: 100%;
+    height: auto;
+}
+
+/* Aumentar el tamaño de la imagen en hover */
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.objectives-list {
+    list-style-type: none; /* Elimina el estilo de lista por defecto */
+    padding: 0;
+    margin: 0;
+}
+
+.objectives-list li {
+    background-color: #f0f0f0; /* Color de fondo para los elementos de la lista */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.objectives-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Aplica la línea tachada al texto cuando el checkbox está marcado */
+.objectives-list input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #888; /* Cambia el color del texto para indicar que está completado */
+}
+
+/* Diseño de columnas en pantallas más grandes (tabletas y escritorios) */
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row; /* Cambia a filas para pantallas grandes */
+        justify-content: space-between; /* Distribuye las columnas */
+        gap: 20px;
+    }
+
+    .column {
+        width: 30%; 
+    }
+
+    .imagenpicture {
+        width: 100%;
+    }
+}
+
+
+#white{
+    color: white;
+}
